@@ -1,6 +1,10 @@
 # -*- coding: utf-8 -*-
 #
+<<<<<<< HEAD
 # app documentation build configuration file, created by
+=======
+# aprendo documentation build configuration file, created by
+>>>>>>> a3b34dde38c09eed917ec2e1f6a87883b0411429
 # sphinx-quickstart on Sun Feb 17 11:46:20 2013.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -40,7 +44,11 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
+<<<<<<< HEAD
 project = u'app'
+=======
+project = u'aprendo'
+>>>>>>> a3b34dde38c09eed917ec2e1f6a87883b0411429
 copyright = u'2014, ChangeMyName'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -164,7 +172,11 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
+<<<<<<< HEAD
 htmlhelp_basename = 'appdoc'
+=======
+htmlhelp_basename = 'aprendodoc'
+>>>>>>> a3b34dde38c09eed917ec2e1f6a87883b0411429
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -183,7 +195,11 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
+<<<<<<< HEAD
   ('index', 'app.tex', u'app Documentation',
+=======
+  ('index', 'aprendo.tex', u'aprendo Documentation',
+>>>>>>> a3b34dde38c09eed917ec2e1f6a87883b0411429
    u'ChangeToMyName', 'manual'),
 ]
 
@@ -213,7 +229,11 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
+<<<<<<< HEAD
     ('index', 'app', u'app Documentation',
+=======
+    ('index', 'aprendo', u'aprendo Documentation',
+>>>>>>> a3b34dde38c09eed917ec2e1f6a87883b0411429
      [u'ChangeToMyName'], 1)
 ]
 
@@ -227,8 +247,13 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
+<<<<<<< HEAD
   ('index', 'app', u'app Documentation',
    u'ChangeToMyName', 'app', 'One line description of project.',
+=======
+  ('index', 'aprendo', u'aprendo Documentation',
+   u'ChangeToMyName', 'aprendo', 'One line description of project.',
+>>>>>>> a3b34dde38c09eed917ec2e1f6a87883b0411429
    'Miscellaneous'),
 ]
 
