@@ -1,0 +1,155 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{% block content %}
+
+ <nav class="navbar navbar-default" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+      	<img src="{% static 'img/cubo.png' %}" class="logo"><span style="color:#1e51a4;">APRENDO 2014</span>
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+          <li><a href="/">INICIO</a></li>
+          <li><a href="/programa/">PROGRAMA</a></li>
+          <li><a href="#">CHARLISTAS</a></li>
+          <li><a href="#">BECAS</a></li>
+          <li><button type="button" class="btn btn-success navbar-btn" onclick="location.href = '';">REGÍSTRATE</button></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    <div id="schedule">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-3">
+            <div id="header">
+                <p class="text-center"><span style="color:#1e51a4">PROGRAMA</span></p>
+            </div>
+          </div><!-- /col-sm-6 -->
+          <div class="col-sm-4">
+            <table class="table table-hover">
+            <caption>Viernes 7 de Noviembre</caption>
+              <tr>
+                <td>6:30 pm</td>
+                <td>Inauguración Stands</td> 
+              </tr>
+              <tr>
+                <td>7:00 pm</td>
+                <td>Apertura del Congreso por Elena Viyella de Paliza, Presidente de Educa.</td> 
+              </tr>
+              <tr>
+                <td>7:10 pm</td>
+                <td>Palabras del Ministro de Educación de la República Dominicana Carlos Amarante Baret.</td>
+              </tr>
+              <tr>
+                <td>7:30 pm</td>
+                <td>Conferencia Magistral a cargo de
+				Nilton Vasconcelos, Secretario de Trabajo, Empleo, Renta y Deporte. Salvador de Bahía, Brasil. 
+				</td> 
+              </tr>
+              <tr>
+                <td>8:30 pm</td>
+                <td>Acto cultural de cierre a cargo de Alerta Joven.</td> 
+              </tr>
+            </table>
+          </div>
+          <div class="col-sm-4">
+            <table class="table table-hover">
+            <caption>Sábado 8 de Noviembre</caption>
+              <tr>
+                <td>9:00 am</td>
+                <td>Desayuno</td> 
+              </tr>
+              <tr>
+                <td>9:30 am</td>
+                <td>Inicio del Trabajo</td> 
+              </tr>
+              <tr>
+                <td>12:00 pm</td>
+                <td>Almuerzo</td> 
+              </tr>
+              <tr>
+                <td>1:00 pm</td>
+                <td>Check-In</td> 
+              </tr>
+              <tr>
+                <td>2:00 pm</td>
+                <td>Reunión con los Mentores</td> 
+              </tr>
+              <tr>
+                <td>6:30 pm</td>
+                <td>Cena</td> 
+              </tr>
+              <tr>
+                <td>7:30 pm</td>
+                <td>Check-In</td> 
+              </tr>
+              <tr>
+                <td>10:00 pm</td>
+                <td>Cierre de la Jornada de Trabajo</td> 
+              </tr>
+            </table>
+          </div>
+          <div class="col-sm-4">
+            <table class="table table-hover">
+            <caption>Domingo 9 de Noviembre</caption>
+              <tr>
+                <td>9:00 am</td>
+                <td>Desayuno</td> 
+              </tr>
+              <tr>
+                <td>10:00 am</td>
+                <td>Check-In</td> 
+              </tr>
+              <tr>
+                <td>12:00 pm</td>
+                <td>Almuerzo</td> 
+              </tr>
+              <tr>
+                <td>12:30 pm</td>
+                <td>Reunión con los Mentores</td> 
+              </tr>
+              <tr>
+                <td>3:00 pm</td>
+                <td>Preparación de la Presentación</td> 
+              </tr>
+              <tr>
+                <td>4:00 pm</td>
+                <td>Cena</td> 
+              </tr>
+              <tr>
+                <td>5:00 pm</td>
+                <td>Presentaciones Finales</td> 
+              </tr>
+              <tr>
+                <td>7:30 pm</td>
+                <td>Evaluación y Premiación</td> 
+              </tr>
+              <tr>
+                <td>8:30 pm</td>
+                <td>Cierre del Evento</td> 
+              </tr>
+              <tr>
+                <td>9:00 pm</td>
+                <td>After Party</td> 
+              </tr>
+            </table>
+          </div>
+        </div><!-- /row --> 
+      </div><!-- container -->
+    </div> <!-- /programa -->
+
+{% endblock %}

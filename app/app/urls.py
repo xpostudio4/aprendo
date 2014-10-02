@@ -9,6 +9,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^$', 'app.views.home'),
+    url(r'^programa/', 'app.views.schedule'),
 
     # Examples:
     # url(r'^$', 'app.views.home', name='home'),

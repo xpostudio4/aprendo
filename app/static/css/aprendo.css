@@ -8,12 +8,8 @@ p, a, h1, h2, h3, h4, h5, h6 {
 
 /*Cover//////////////////////////////////////*/
 
-#cover {
-	background:url('../img/aprendo.jpg') no-repeat;
-	background-size: cover;
-   	-webkit-background-size: cover;
- 	-moz-background-size: cover;
-  	-o-background-size: cover;
+.cover {
+  margin: 0 0 40px 0;
 }
 
 .btn-default {
@@ -26,21 +22,23 @@ p, a, h1, h2, h3, h4, h5, h6 {
 
 .navbar-default {
 	background-color: #fff !important;
-	border-color: transparent !important;
-}
-
-.nav {
-	margin-top: 60px;
 }
 
 .navvy a {
-	color: #666 ;
+	color: #666;
+	margin-top: 60px;
 }
+
+.navvo a {
+	color: #666;
+	margin: 20px 0px;
+}
+
 
 .cover img {
 	width: 400px;
 	height: auto;
-	margin-top: 30px;
+	margin-top: 50px;
 }
 
 .cover-text {
@@ -68,10 +66,17 @@ p, a, h1, h2, h3, h4, h5, h6 {
 	color: #666;
 }
 
+/*Menu//////////////////////////////////////*/
+
+.logo {
+	height: 25px;
+	margin-right: 10px;
+}
+
 /*Sponsors//////////////////////////////////////*/
 
 #sponsors {
-	margin-bottom: 3%;
+	margin: 3% 0%;
 }
 
 #sponsors li {
@@ -103,25 +108,61 @@ p, a, h1, h2, h3, h4, h5, h6 {
 
 .venue-text {
 	font-size: 20px;
+	color: #666;
 }
 
 .map {
 	margin: 30px 0px;
 }
 
+/*Countdown//////////////////////////////////////*/
+
+.countdown {
+	background-color: #0d296a;
+}
+
+/*Schedule//////////////////////////////////////*/
+
+#schedule {
+
+}
+
+caption {
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+
 /*Footer//////////////////////////////////////*/
 
 .footer {
-/*	border-top: 1px solid #999;
-*/}
+	background-color: #0d296a;
+	padding: 3% 0%;
+	color: #fff;
+}
 
 .footer p {
-	font-size: 15px;
+	font-size: 20px;
+}
+
+.footer a {
+	color: #fff;
+}
+
+.footer i {
+	margin-right: 20px;
 }
 
 .footer img {
 	height: 100px;
 }
 
+/*Credits//////////////////////////////////////*/
 
+.credits {
+	background-color: #1C2326;
+	padding-top: 10px;
+	color: #fff;
+}
 
