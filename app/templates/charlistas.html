@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{% block content %}
+
+ <nav class="navbar navbar-default" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+      	<img src="{% static 'img/cubo.png' %}" class="logo"><span style="color:#1e51a4;">APRENDO 2014</span>
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+          <li><a href="/">INICIO</a></li>
+          <li><a href="/programa/">PROGRAMA</a></li>
+          <li><a href="#">CHARLISTAS</a></li>
+          <li><a href="#">BECAS</a></li>
+          <li><button type="button" class="btn btn-success navbar-btn" onclick="location.href = '';">REGÍSTRATE</button></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    <div id="speakers">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-3">
+            <div id="header">
+                <h1 class="text-center"><span style="color:#1e51a4">CHARLISTAS</span></h1>
+            </div>
+           </div><!-- /col-sm-6 -->
+          </div><!-- /row -->
+
+          <div class="row ">
+
+          <div class="col-sm-4">
+              <div class="text-center speaker">
+    	        	<img src="{% static 'img/speakers/1.jpeg' %}" class="img-square">
+    	        	<h3>Guillaume Marty</h3>
+                <p>Guillaume is passionate about web technologies and loves hacking and building crazy things on top of open technologies. He’s also fascinated by video games, animation, and, as a Japanese speaker, foreign languages.</p>
+  	          </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="text-center speaker">
+    	        	<img src="{% static 'img/speakers/2.png' %}" class="img-square">
+    	        	<h3>James Long</h3>
+                <p>I love programming language research, and hack on compilers and games in my free time. During the day I work for Mozilla on the Developer Tools. I achieved the ultimate yak-shave: spent 3 months building my own desk before I could work on some code.</p>
+  	          </div>
+            </div><!-- /row --> 
+ 
+            <div class="col-sm-4">
+              <div class="text-center speaker">
+    	        	<img src="{% static 'img/speakers/3.jpeg' %}" class="img-square">
+    	        	<h3>Kawandeep Virdee</h3>
+                <p>Kawandeep Virdee is an open web artist, immensely inspired by the sharing and collaboration of the JavaScript community. He uses technology and art to explore ways we can create meaning and joy collectively. At Embedly, he is a product designer and developer advocate.</p>
+  	          </div>
+            </div><!-- /row --> 
+
+            <div class="col-sm-4">
+              <div class="text-center speaker">
+    	        	<img src="{% static 'img/speakers/4.jpeg' %}" class="img-square">
+    	        	<h3>Jordan Matthiesen</h3>
+                <p>A web developer turned Program Manager on the Microsoft HTML 5/JavaScript tools team working on JavaScript editing and multi-device client development tools.</p>
+  	          </div>
+            </div><!-- /row --> 
+
+        </div><!-- /row -->
+      </div><!-- container -->
+    </div> <!-- /programa -->
+
+{% endblock %}

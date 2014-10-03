@@ -3,7 +3,7 @@
 
 
 p, a, h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif !important;
 }
 
 /*Cover//////////////////////////////////////*/
@@ -46,7 +46,7 @@ p, a, h1, h2, h3, h4, h5, h6 {
 }
 
 #head1 {
-	font-size: 25px;
+	font-size: 24px;
 	font-weight: bold;
 	text-align: right;
 	color: #666;
@@ -97,7 +97,7 @@ p, a, h1, h2, h3, h4, h5, h6 {
 }
 
 .gold img {
-	height: 100px;
+	margin: 30px 10px;
 }
 
 /*Venue//////////////////////////////////////*/
@@ -113,6 +113,18 @@ p, a, h1, h2, h3, h4, h5, h6 {
 
 .map {
 	margin: 30px 0px;
+	position: relative;
+    padding-bottom: 25%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+}
+
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
 }
 
 /*Countdown//////////////////////////////////////*/
@@ -137,6 +149,40 @@ caption {
 	font-size: 12px;
 }
 
+/*Speakers//////////////////////////////////////*/
+
+
+#speakers img {
+	height: 150px;
+	margin: 10px 50px;
+	text-align: center;
+}
+
+#speakers h3 {
+	color: #333;
+	text-align: center;
+
+}
+
+#speakers b {
+	color: #1e51a4;
+}
+
+#speakers p {
+	font-size: 15px;
+	font-style: italic;
+}
+
+#speakers .row {
+	padding: 2% 0%;
+}
+
+.speaker {
+	border: 1px solid #d1d1d1;
+	height: 450px;
+	padding: 5%;
+	margin: 5%;
+}
 
 /*Footer//////////////////////////////////////*/
 
