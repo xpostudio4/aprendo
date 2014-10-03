@@ -6,3 +6,6 @@ def home(request):
 
 def schedule(request):
         return render(request, 'programa.html')
+
+def speakers(request):
+        return render(request, 'charlistas.html')
