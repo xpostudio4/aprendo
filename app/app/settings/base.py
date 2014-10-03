@@ -117,7 +117,7 @@ SECRET_KEY = r"nw=v+flx*)c3^4c^#sfxks7l&h6q@$mk1b&qgum#h(p!bz_!2&"
 ########## SITE CONFIGURATION
 # Hosts/domain names that are valid for this site
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = [ u'104.131.88.27', u'aprendo.do']
+ALLOWED_HOSTS = [ u'104.131.88.27', u'aprendo.do', u'www.aprendo.do']
 ########## END SITE CONFIGURATION
 
 
