@@ -52,12 +52,45 @@
               <li><a href="/charlistas/">CHARLISTAS</a></li>
               <li><a href="/talleres/">TALLERES</a></li>
               <li><a href="/patrocinadores/">PATROCINADORES</a></li>
-              <li><button type="button" class="btn btn-success navbar-btn" onclick="location.href = '';">REGÍSTRATE</button></li>
+              <li><button type="button" class="btn btn-success navbar-btn" data-toggle="modal" data-target="#myModal">REGÍSTRATE</button></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
     {% endblock nav %}
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">Registro</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-12">
+                <form action="." method="post" enctype="multipart/form-data" class="form-horizontal">
+                  {% csrf_token %}
+
+                  <div class="form-group">
+                    <label class="col-sm-4 control-label">Nombre</label>
+                    <div class="col-sm-8">
+                              {{ form.first_name }}
+                    </div>
+                  </div>
+                  
+                </form>
+              </div>
+            </div>
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Guardar</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
       {% block content %}
@@ -106,7 +139,6 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
     <script src="{% static 'js/modernizr.custom.js' %}"></script>
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
     <script src="{% static 'js/soon/plugins.js' %}"></script>
     <script src="{% static 'js/soon/jquery.themepunch.revolution.min.js' %}"></script>
     <script src="{% static 'js/soon/custom.js' %}"></script>
