@@ -46,10 +46,10 @@ p, a, h1, h2, h3, h4, h5, h6 {
 }
 
 #head1 {
-	font-size: 24px;
+	font-size: 22px;
 	font-weight: bold;
 	text-align: right;
-	color: #666;
+	color: #000;
 }
 
 #head2 {
@@ -86,9 +86,10 @@ p, a, h1, h2, h3, h4, h5, h6 {
 }
 
 #header p {
-	font-size: 30px;
+	font-size: 30px !important;
 	font-weight: bold;
 	color: #333;
+	font-style: normal !important;
 }
 
 #header {
@@ -171,10 +172,6 @@ caption {
 #speakers p {
 	font-size: 15px;
 	font-style: italic;
-}
-
-#speakers .row {
-	padding: 2% 0%;
 }
 
 .speaker {

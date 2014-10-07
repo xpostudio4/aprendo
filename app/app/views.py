@@ -9,3 +9,9 @@ def schedule(request):
 
 def speakers(request):
         return render(request, 'charlistas.html')
+
+def workshops(request):
+        return render(request, 'talleres.html')
+
+def sponsors(request):
+        return render(request, 'patrocinadores.html')

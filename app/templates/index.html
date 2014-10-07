@@ -3,57 +3,36 @@
 {% load staticfiles %}
 
 {% block content %}
-
-    <nav class="navbar navbar-default hidden-lg hidden-md hidden-sm" role="navigation">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">
-            <img src="{% static 'img/cubo.png' %}" class="logo"><span style="color:#1e51a4;">APRENDO 2014</span>
-          </a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-              <li><a href="/">INICIO</a></li>
-              <li><a href="/programa/">PROGRAMA</a></li>
-              <li><a href="/charlistas/">CHARLISTAS</a></li>
-              <li><a href="#">BECAS</a></li>
-              <li><button type="button" class="btn btn-success navbar-btn" onclick="location.href = '';">REGÍSTRATE</button></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-
+{% block nav %}
+{% endblock nav %}
+    
     <div class="cover">
         <div class="container">
             <div class="row">
                 <div class="col-sm-4 hidden-xs">  
                     <img src="{% static 'img/cubo.png' %}">
                 </div>
+
                 <div class="col-sm-8">
+                  
                     <div class="row">
-                        <div class="col-sm-9 col-sm-offset-3 text-right">
+                        <div class="col-sm-12 text-right">
                             <ul class="nav nav-pills navvy hidden-xs">
                               <li><a href="/">INICIO</a></li>
                               <li><a href="/programa/">PROGRAMA</a></li>
                               <li><a href="/charlistas/">CHARLISTAS</a></li>
-                              <li><a href="#">BECAS</a></li>
+                              <li><a href="/talleres/">TALLERES</a></li>
+                              <li><a href="/patrocinadores/">PATROCINADORES</a></li>
                               <li><a href="" class="btn btn-success">REGÍSTRATE</a></li>
                             </ul>
                         </div>
                     </div>
+
                     <div class="col-sm-12">
                       <div class="cover-text">
-                        <p id="head1">XVII Congreso Internacional de Educación APRENDO</p>
-                        <p id="head2">JOVENES RD: <span style="color:#27ae60">EDUCACIÓN,</span> <span style="color:#ee2738">EMPLEO</span> <span style="color:#1e51a4">&amp; ESPERANZA</span></p>
-                        <p id="head3">Noviembre 7, 8 y 9 de Noviembre, 2014</p>
+                        <p id="head1">XVIII Congreso Internacional de Educación "APRENDO"</p>
+                        <p id="head2">JÓVENES RD: <span style="color:#27ae60">EDUCACIÓN,</span> <span style="color:#ee2738">EMPLEO</span> <span style="color:#1e51a4">&amp; ESPERANZA</span></p>
+                        <p id="head3">7, 8 y 9 de Noviembre, 2014</p>
                     </div>
                     </div>
                     
@@ -77,39 +56,7 @@
       </div>
     </div>
 
-    
-    <div id="sponsors">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6 col-sm-offset-3">
-            <div id="header">
-                <p class="text-center"><span style="color:#27ae60">PATROCINADORES</span></p>
-            </div>
-          </div><!-- /col-sm-6 -->
-        </div><!-- /row -->
-          <div class="row">
-            <div class="col-sm-12">
-
-              <ul class="gold text-center">
-                <li><img src="{% static 'img/sponsors/popular.jpg' %}"></li>
-                <li><img src="{% static 'img/sponsors/neo.jpg' %}"></li>
-                <li><img src="{% static 'img/sponsors/usaid.jpg' %}"></li>
-                <li><img src="{% static 'img/sponsors/entrena.jpg' %}"></li>
-                <li><img src="{% static 'img/sponsors/alerta.jpg' %}"></li>
-                <li><img src="{% static 'img/sponsors/propagas.jpg' %}"></li>
-                <li><img src="{% static 'img/sponsors/inafocam.jpg' %}"></li>
-                <li><img src="{% static 'img/sponsors/mescyt.jpg' %}"></li>
-                <li><img src="{% static 'img/sponsors/fl.jpg' %}"></li>
-                <li><img src="{% static 'img/sponsors/orange.jpg' %}"></li>
-              </ul>
-
-            </div>
-          </div><!-- /row -->
-      </div><!-- /container -->
-    </div><!-- /sponsors -->
-
-
-
+  <br>
     <div class="venue"> 
       <div class="container">
         <div class="row">

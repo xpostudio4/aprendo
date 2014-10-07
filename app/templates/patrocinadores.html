@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{% block content %}
+    
+    <div id="sponsors">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-3">
+            <div id="header">
+                <p class="text-center"><span style="color:#27ae60">PATROCINADORES</span></p>
+            </div>
+          </div><!-- /col-sm-6 -->
+        </div><!-- /row -->
+          <div class="row">
+            <div class="col-sm-12">
+
+              <ul class="gold text-center">
+                <li><img src="{% static 'img/sponsors/popular.jpg' %}"></li>
+                <li><img src="{% static 'img/sponsors/neo.jpg' %}"></li>
+                <li><img src="{% static 'img/sponsors/usaid.jpg' %}"></li>
+                <li><img src="{% static 'img/sponsors/entrena.jpg' %}"></li>
+                <li><img src="{% static 'img/sponsors/alerta.jpg' %}"></li>
+                <li><img src="{% static 'img/sponsors/propagas.jpg' %}"></li>
+                <li><img src="{% static 'img/sponsors/inafocam.jpg' %}"></li>
+                <li><img src="{% static 'img/sponsors/mescyt.jpg' %}"></li>
+                <li><img src="{% static 'img/sponsors/fl.jpg' %}"></li>
+                <li><img src="{% static 'img/sponsors/orange.jpg' %}"></li>
+              </ul>
+
+            </div>
+          </div><!-- /row -->
+      </div><!-- /container -->
+    </div><!-- /sponsors -->    
+
+{% endblock %}
+  
