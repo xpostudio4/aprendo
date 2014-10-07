@@ -46,10 +46,10 @@ p, a, h1, h2, h3, h4, h5, h6 {
 }
 
 #head1 {
-	font-size: 24px;
+	font-size: 22px;
 	font-weight: bold;
 	text-align: right;
-	color: #666;
+	color: #000;
 }
 
 #head2 {
@@ -86,9 +86,10 @@ p, a, h1, h2, h3, h4, h5, h6 {
 }
 
 #header p {
-	font-size: 30px;
+	font-size: 30px !important;
 	font-weight: bold;
 	color: #333;
+	font-style: normal !important;
 }
 
 #header {
@@ -98,6 +99,21 @@ p, a, h1, h2, h3, h4, h5, h6 {
 
 .gold img {
 	margin: 30px 10px;
+}
+
+/*About//////////////////////////////////////*/
+
+#about {
+	padding: 3%;
+}
+
+#about p {
+	font-size: 18px;
+	text-align: justify;
+}
+
+#about b {
+	font-size: 20px;
 }
 
 /*Venue//////////////////////////////////////*/
@@ -159,9 +175,7 @@ caption {
 }
 
 #speakers h3 {
-	color: #333;
 	text-align: center;
-
 }
 
 #speakers b {
@@ -173,15 +187,16 @@ caption {
 	font-style: italic;
 }
 
-#speakers .row {
-	padding: 2% 0%;
-}
-
 .speaker {
 	border: 1px solid #d1d1d1;
-	height: 450px;
+	height: 350px;
 	padding: 5%;
 	margin: 5%;
+}
+
+.speaker:hover {
+	background-color: #0E467D;
+	color: #fff;
 }
 
 /*Footer//////////////////////////////////////*/
