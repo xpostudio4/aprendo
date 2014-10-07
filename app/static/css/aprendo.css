@@ -101,6 +101,21 @@ p, a, h1, h2, h3, h4, h5, h6 {
 	margin: 30px 10px;
 }
 
+/*About//////////////////////////////////////*/
+
+#about {
+	padding: 3%;
+}
+
+#about p {
+	font-size: 18px;
+	text-align: justify;
+}
+
+#about b {
+	font-size: 20px;
+}
+
 /*Venue//////////////////////////////////////*/
 
 .venue img {
@@ -160,9 +175,7 @@ caption {
 }
 
 #speakers h3 {
-	color: #333;
 	text-align: center;
-
 }
 
 #speakers b {
@@ -176,9 +189,14 @@ caption {
 
 .speaker {
 	border: 1px solid #d1d1d1;
-	height: 450px;
+	height: 350px;
 	padding: 5%;
 	margin: 5%;
+}
+
+.speaker:hover {
+	background-color: #0E467D;
+	color: #fff;
 }
 
 /*Footer//////////////////////////////////////*/
