@@ -28,7 +28,10 @@ def sponsors(request):
 def attendee_form(request):
 	form = AttendeeForm(request.POST)
 	if form.is_valid():
-		return HttpResponse('form.is_valid')
-		f = form.save()
-		return HttpResponse(json.dumps({'save' : 'true'}), content_type='application/json')
-	return HttpResponseNotFound('Error')
+		try: 
+			f = form.save()
+			return HttpResponse(json.dumps({'save' : 'true'}), content_type='application/json')
+		except Exception as x:
+			return HttpResponse(x)
+	print >>sys.stderr, form.errors
+	return HttpResponse(form.errors)

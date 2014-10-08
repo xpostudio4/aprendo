@@ -63,13 +63,24 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true">&times;</span>
+              <span class="sr-only">Close</span>
+            </button>
             <h4 class="modal-title" id="myModalLabel">Registro</h4>
           </div>
           <div class="modal-body">
             <div class="row">
+
+              <div class="col-sm-12">
+                  <div class="alert alert-success hidden" role="alert" id="alert-green">Su solicitud ha sido procesada.</div>
+
+                  <div class="alert alert-danger hidden" role="alert" id="alert-red">Hubo un error en su solicitud, por favor inténtelo de nuevo.</div>
+              </div>
+
               <div class="col-sm-9 col-sm-offset-2">
-                <form action="." method="post" enctype="multipart/form-data" class="form-horizontal" id="new-form">
+
+                <form action="formulario/" method="post" class="form-horizontal" id="new-form">
                   {% csrf_token %}
 
                   <div class="form-group">
@@ -182,25 +193,26 @@
     <script src="{% static 'js/app.js' %}"></script>
 
     <script type="text/javascript">
-      var link = $(".btn-form");
+      var link = $("#submit");
  
       link.click(
           function(event){
               //eliminate the default function
               event.preventDefault();
               $.ajax({
-                  url: 'formulario/',
+                  url: '/formulario/',
                   data:  $('#new-form').serialize(), 
                   type: "POST",
                   success: 
                       function(result){
-                          alert(result);
+                          $('#alert-green').removeClass('hidden');
                           $('#new-form').trigger('reset');
+                          $('#alert-red').addClass('hidden');
+                          $('#alert-green').delay(3000).queue(function(){$('#alert-green').addClass('hidden')});
                       },
                   error: 
                       function(xhr){
-                          alert(xhr.statusText);
-                          $('#myModal').modal('hide');
+                          $('#alert-red').removeClass('hidden');
                       }
               });
       });
