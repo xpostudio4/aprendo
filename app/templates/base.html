@@ -68,14 +68,49 @@
           </div>
           <div class="modal-body">
             <div class="row">
-              <div class="col-sm-12">
-                <form action="." method="post" enctype="multipart/form-data" class="form-horizontal">
+              <div class="col-sm-9 col-sm-offset-2">
+                <form action="." method="post" enctype="multipart/form-data" class="form-horizontal" id="new-form">
                   {% csrf_token %}
 
                   <div class="form-group">
-                    <label class="col-sm-4 control-label">Nombre</label>
+                    <label class="col-sm-2 control-label">Nombre</label>
                     <div class="col-sm-8">
                               {{ form.first_name }}
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">Apellido</label>
+                    <div class="col-sm-8">
+                              {{ form.last_name }}
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">Edad</label>
+                    <div class="col-sm-8">
+                              {{ form.age }}
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">Correo</label>
+                    <div class="col-sm-8">
+                              {{ form.email }}
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">Teléfono</label>
+                    <div class="col-sm-8">
+                              {{ form.phone }}
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">Sector</label>
+                    <div class="col-sm-8">
+                              {{ form.sector }}
                     </div>
                   </div>
                   
@@ -86,7 +121,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-            <button type="button" class="btn btn-primary">Guardar</button>
+            <button type="submit" class="btn btn-primary btn-form" id="submit">Guardar</button>
           </div>
         </div>
       </div>
@@ -145,6 +180,31 @@
 
     <!-- place project specific Javascript in this file -->
     <script src="{% static 'js/app.js' %}"></script>
+
+    <script type="text/javascript">
+      var link = $(".btn-form");
+ 
+      link.click(
+          function(event){
+              //eliminate the default function
+              event.preventDefault();
+              $.ajax({
+                  url: 'formulario/',
+                  data:  $('#new-form').serialize(), 
+                  type: "POST",
+                  success: 
+                      function(result){
+                          alert(result);
+                          $('#new-form').trigger('reset');
+                      },
+                  error: 
+                      function(xhr){
+                          alert(xhr.statusText);
+                          $('#myModal').modal('hide');
+                      }
+              });
+      });
+    </script>
 
     {% block extra_js %}{% endblock extra_js %}
   </body>

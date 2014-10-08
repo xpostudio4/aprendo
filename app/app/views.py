@@ -13,18 +13,22 @@ def schedule(request):
 		return render(request, 'programa.html', {'form': form })
 
 def speakers(request):
-		return render(request, 'charlistas.html')
+		form = AttendeeForm()
+		return render(request, 'charlistas.html', {'form': form })
 
 def workshops(request):
-		return render(request, 'talleres.html')
+		form = AttendeeForm()
+		return render(request, 'talleres.html', {'form': form })
 
 def sponsors(request):
-		return render(request, 'patrocinadores.html')
+		form = AttendeeForm()
+		return render(request, 'patrocinadores.html', {'form': form })
 
 @require_POST
 def attendee_form(request):
 	form = AttendeeForm(request.POST)
-	if form.is_valid:
+	if form.is_valid():
+		return HttpResponse('form.is_valid')
 		f = form.save()
 		return HttpResponse(json.dumps({'save' : 'true'}), content_type='application/json')
 	return HttpResponseNotFound('Error')

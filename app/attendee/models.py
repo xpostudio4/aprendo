@@ -9,4 +9,6 @@ class Attendee(models.Model):
     phone  = models.CharField(max_length=15, verbose_name='Telefono')
     sector = models.CharField(max_length=15, verbose_name='Sector')
 
+    def __unicode__(self):
+    	return self.email
 
