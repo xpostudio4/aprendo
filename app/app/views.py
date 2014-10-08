@@ -1,6 +1,6 @@
 import json
 import sys
-from django.http import HttpResponse, HttpResponseNotFound, HttpResponseBadRequest
+from django.http import HttpResponse, HttpResponseNotFound
 from django.shortcuts import render
 from django.views.decorators.http import require_POST
 from attendee.forms import AttendeeForm
@@ -35,4 +35,4 @@ def attendee_form(request):
 		except Exception as x:
 			return HttpResponse(x)
 	print >>sys.stderr, form.errors
-	return HttpResponseBadRequest
+	return HttpResponse(form.errors)
