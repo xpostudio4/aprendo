@@ -23,7 +23,7 @@ def workshops(request):
 
 def sponsors(request):
 		form = AttendeeForm()
-		return render(request, 'patrocinadores.html', {'form': form })
+		return render(request, 'colaboradores.html', {'form': form })
 
 @require_POST
 def attendee_form(request):
