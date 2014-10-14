@@ -189,13 +189,13 @@ caption {
 
 .speaker {
 	border: 1px solid #d1d1d1;
-	height: 350px;
+	height: 420px;
 	padding: 5%;
 	margin: 5%;
 }
 
 .speaker:hover {
-	background-color: #0E467D;
+	background-color: #0d296a;
 	color: #fff;
 }
 
