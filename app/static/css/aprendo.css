@@ -217,16 +217,13 @@ p, a, h1, h2, h3, h4, h5, h6 {
 	border: 2px solid #333;
 	padding: 1%;
 	margin: 1.5%;
-	color: #333;
+	color: #fff;
 	border-radius: 10px;
 	-webkit-border-radius: 10px; 
 	 -moz-border-radius: 10px; 
+	 background-color: #0d296a;
 }
 
-.mspeaker:hover {
-	background-color: #0d296a;
-	color: #fff;
-}
 
 .mspeaker h3 {
 	text-align: left !important;
