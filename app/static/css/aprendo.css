@@ -151,11 +151,16 @@ p, a, h1, h2, h3, h4, h5, h6 {
 
 /*Schedule//////////////////////////////////////*/
 
-#schedule {
-
+#schedule .table > tbody > tr > td {
+	vertical-align: middle;
 }
 
-caption {
+#schedule img {
+	width: 50px;
+	height: auto;
+}
+
+.schedule-caption {
   font-size: 24px;
   margin-bottom: 10px;
   margin-top: 20px;
@@ -163,6 +168,12 @@ caption {
 
 .by {
 	font-size: 12px;
+}
+
+.workshop-caption {
+	font-size: 24px;
+	margin-bottom: 20px;
+  	margin-top: 30px;
 }
 
 /*Speakers//////////////////////////////////////*/
@@ -192,11 +203,38 @@ caption {
 	height: 420px;
 	padding: 5%;
 	margin: 5%;
+	border-radius: 10px;
+	 -webkit-border-radius: 10px; 
+	 -moz-border-radius: 10px; 
 }
 
 .speaker:hover {
 	background-color: #0d296a;
 	color: #fff;
+}
+
+.mspeaker {
+	border: 2px solid #333;
+	padding: 1%;
+	margin: 1.5%;
+	color: #333;
+	border-radius: 10px;
+	-webkit-border-radius: 10px; 
+	 -moz-border-radius: 10px; 
+}
+
+.mspeaker:hover {
+	background-color: #0d296a;
+	color: #fff;
+}
+
+.mspeaker h3 {
+	text-align: left !important;
+	font-size: 36px;
+}
+
+.mspeaker p {
+	font-size: 20px !important;
 }
 
 /*Footer//////////////////////////////////////*/

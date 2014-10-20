@@ -13,63 +13,202 @@
                 <p class="text-center"><span style="color:#EE2738">TALLERES SIMULTÁNEOS</span></p>
             </div>
           </div><!-- /col-sm-6 -->
-          <div class="col-sm-12">
-            <table class="table table-hover table-bordered">
-              <thead>
-                <th colspan="2"></th>
-                <th class="text-center">3:00 - 3:45</th>
-                <th class="text-center">4:00 - 4:45</th>
-                <th class="text-center">5:00 - 5:45</th>
-                <th class="text-center">6:00 - 6:45</th>
-              </thead>
-              <tbody>
-                <tr>
-                  <td width="10%"><b>Sala 1</b></td>
-                  <td width="40%">"Cómo orientar a los jóvenes para lograr su primer empleo sin salirse de la educación obligatoria. Técnicas para los educadores que reciben esta demanda"</td> 
-                  <td class="text-center">Lisanna Rosario, SUR FUTURO</td>
-                  <td class="text-center">Como orientar a los jóvenes lograr su primer empleo sin salirse de la educación obligatoria. Por Esther Frías, ENTRENA</td>
-                  <td class="text-center">Comenta Marisol Forero, Ministerio del Trabajo de Colombia</td>
-                  <td class="text-center"></td>
-                </tr>
-                <tr>
-                  <td><b>Sala 2</b></td>
-                  <td>"Los elementos básicos para un ingreso efectivo al mercado de trabajo"</td> 
-                  <td class="text-center">El uso de la tecnología. Por Luis Betances, FL Betances</td>
-                  <td class="text-center">El inglés como herramienta fundamental. Por Juan Valdez, DR – TESOL</td>
-                  <td class="text-center" colspan="2">Habilidades blandas. Centros de Autosuficiencia SUD/INICIA/INFOTEP</td>
-                </tr>
-                <tr>
-                  <td><b>Sala 3</b></td>
-                  <td>"Empresarios le hablan a los educadores: que esperamos encontrar en un egresado de la educación media y superior."</td> 
-                  <td class="text-center">Persona, Conocimiento y Actitud. Por Isabel Estévez, ACERH</td>
-                  <td class="text-center">Lo que demandan las empresas. Por Virginia Quintana, Claro Dominicana</td>
-                  <td class="text-center">Gerente de RRHH - Grupo Ramos</td>
-                  <td class="text-center">Gerente de RRHH - Banco Popular</td>
-                </tr>
-                <tr>
-                  <td><b>Sala 4</b></td>
-                  <td>"La revalorización de la educación técnica en la República Dominicana"</td> 
-                  <td class="text-center">INFOTEP/SENA</td>
-                  <td class="text-center">Mercedes Matrillé, MINERD</td>
-                  <td class="text-center" colspan="2">IEET/ITLA/ITSC</td>
-                </tr>
-                <tr>
-                  <td><b>Sala 5</b></td>
-                  <td>"El emprendimiento como mecanismo de inserción al mercado de trabajo"</td>
-                  <td class="text-center">Omar Pool, Incubadora de negocios CEINTEC</td>
-                  <td class="text-center">Como emprender sin morir en el intento. Por Leonardo Jimenez, Stance Data</td>
-                  <td class="text-center">Cesar Asiático, Junior Achivement</td>
-                  <td class="text-center">Claudina Valdez, Vicepresidencia</td> 
-                </tr>
-                <tr>
-                  <td><b>Sala 6</b></td>
-                  <td>"Instrumentos que facilitan el ingreso a una vida adulta productiva: becas, crédito educativo y voluntariado"</td> 
-                  <td class="text-center">Cynthia Leon, Credito Educativo OMTRIX</td>
-                  <td class="text-center">Luis Sena, Becas estudiantiles EDUPASS</td>
-                  <td class="text-center" colspan="2">Ivan Chevalier/ Yann Reynaud, Voluntariado e intercambio cultural - ROTARAC de Rotary/Dream Project</td>
-                </tr>
-              </tbody>
+
+          <div class="col-sm-10 col-sm-offset-1">
+            <table class="table table-hover">
+              <caption class="workshop-caption">Sala 1: "Cómo orientar a los jóvenes para lograr su primer empleo sin salirse de la educación obligatoria. Técnicas para los educadores que reciben esta demanda"</caption>
+              <tr>
+                <th width="100px">Hora</th>
+                <th width="50px" colspan="2">Por</th>
+                <th>Título</th>
+              </tr>
+              <tr>
+                <td>3:00 - 3:45</td>
+                <td class="text-center"><img src="{% static 'img/speakers/workshops/profile.png' %}" class="img-circle"></td>
+                <td><b>Lisanna Rosario</b><br>Sur Futuro</td>
+                <td>Por Anunciar</td>
+              </tr>
+              <tr>
+                <td>4:00 - 4:45</td>
+                <td class="text-center" width="50px"><img src="{% static 'img/speakers/workshops/ester.jpg' %}" class="img-circle"> <br></td>
+                <td><b>Esther Frías</b><br>ENTRENA</td>
+                <td>Como orientar a los jóvenes lograr su primer empleo sin salirse de la educación obligatoria.</td>
+              </tr>
+              <tr>
+                <td>5:00 - 5:45</td>
+                <td class="text-center"><img src="{% static 'img/speakers/marisol.jpg' %}" class="img-circle"></td>
+                <td><b>Marisol Forero</b><br>Ministerio de Trabajo de Colombia</td>
+                <td>OTEs Ministerio de Trabajo.</td>
+              </tr>
             </table>
+          </div>
+
+          <div class="col-sm-10 col-sm-offset-1">
+            <table class="table table-hover">
+              <caption class="workshop-caption">Sala 2: "Los elementos básicos para un ingreso efectivo al mercado de trabajo"</caption>
+              <tr>
+                <th width="100px">Hora</th>
+                <th width="50px" colspan="2">Por</th>
+                <th>Título</th>
+              </tr>
+              <tr>
+                <td>3:00 - 3:45</td>
+                <td class="text-center"><img src="{% static 'img/speakers/workshops/betances.jpg' %}" class="img-circle"></td>
+                <td><b>Luis Betances</b><br>FL Betances</td>
+                <td>El uso de la tecnología.</td>
+              </tr>
+              <tr>
+                <td>4:00 - 4:45</td>
+                <td class="text-center" width="50px"><img src="{% static 'img/speakers/workshops/juan.jpg' %}" class="img-circle"> <br></td>
+                <td><b>Juan Valdez</b><br>DR – TESOL</td>
+                <td>El inglés como herramienta fundamental</td>
+              </tr>
+              <tr>
+                <td>5:00 - 5:45</td>
+                <td class="text-center" rowspan="2"><img src="{% static 'img/speakers/workshops/profile.png' %}" class="img-circle"></td>
+                <td rowspan="2"><b>Rufino Díaz, Francisco Valdés, <br>Jorge Alvarado, Wagner Paniagua<br>y Ángela Español</b></td>
+                <td rowspan="2">Habilidades Blandas: Centros de Autosuficiencia SUD, Inicia e INFOTEP</td>
+              </tr>
+              <tr>
+                <td>6:00 - 6:45</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="col-sm-10 col-sm-offset-1">
+            <table class="table table-hover">
+              <caption class="workshop-caption">Sala 3: "Empresarios le hablan a los educadores: que esperamos encontrar en un egresado de la educación media y superior."</caption>
+              <tr>
+                <th width="100px">Hora</th>
+                <th width="50px" colspan="2">Por</th>
+                <th>Título</th>
+              </tr>
+              <tr>
+                <td>3:00 - 3:45</td>
+                <td class="text-center"><img src="{% static 'img/speakers/workshops/isabel.jpg' %}" class="img-circle"></td>
+                <td width="200px"><b>Isabel Estévez</b><br>ACERH</td>
+                <td>Persona, Conocimiento y Actitud</td>
+              </tr>
+              <tr>
+                <td>4:00 - 4:45</td>
+                <td class="text-center" width="50px"><img src="{% static 'img/speakers/workshops/profile.png' %}" class="img-circle"> <br></td>
+                <td><b>Virginia Quintana</b><br>Claro Dominicana</td>
+                <td>Lo que demandan las empresas.</td>
+              </tr>
+              <tr>
+                <td>5:00 - 5:45</td>
+                <td class="text-center"><img src="{% static 'img/speakers/workshops/profile.png' %}" class="img-circle"></td>
+                <td><b>Gerente de RRHH</b><br>Grupo Ramos</td>
+                <td>Por Anunciar</td>
+              </tr>
+              <tr>
+                <td>6:00 - 6:45</td>
+                <td class="text-center"><img src="{% static 'img/speakers/workshops/profile.png' %}" class="img-circle"></td>
+                <td><b>Gerente de RRHH</b><br>Banco Popular</td>
+                <td>Por Anunciar</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="col-sm-10 col-sm-offset-1">
+            <table class="table table-hover">
+              <caption class="workshop-caption">Sala 4: "La revalorización de la educación técnica en la República Dominicana"</caption>
+              <tr>
+                <th width="100px">Hora</th>
+                <th width="50px" colspan="2">Por</th>
+                <th>Título</th>
+              </tr>
+              <tr>
+                <td>3:00 - 3:45</td>
+                <td class="text-center"><img src="{% static 'img/speakers/workshops/profile.png' %}" class="img-circle"></td>
+                <td width="200px"><b>INFOTEP</b><br></td>
+                <td>Por Anunciar</td>
+              </tr>
+              <tr>
+                <td>4:00 - 4:45</td>
+                <td class="text-center" width="50px"><img src="{% static 'img/speakers/workshops/matrill.jpg' %}" class="img-circle"> <br></td>
+                <td><b>Mercedes Matrillé</b><br>MINERD</td>
+                <td>Por Anunciar</td>
+              </tr>
+              <tr>
+                <td>5:00 - 5:45</td>
+                <td class="text-center" rowspan="2"><img src="{% static 'img/speakers/workshops/profile.png' %}" class="img-circle"></td>
+                <td rowspan="2"><b>IEET/ITLA/ITSC</b></td>
+                <td rowspan="2">Por Anunciar</td>
+              </tr>
+              <tr>
+                <td>6:00 - 6:45</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="col-sm-10 col-sm-offset-1">
+            <table class="table table-hover">
+              <caption class="workshop-caption">Sala 5: "El emprendimiento como mecanismo de inserción al mercado de trabajo"</caption>
+              <tr>
+                <th width="100px">Hora</th>
+                <th width="50px" colspan="2">Por</th>
+                <th>Título</th>
+              </tr>
+              <tr>
+                <td>3:00 - 3:45</td>
+                <td class="text-center"><img src="{% static 'img/speakers/workshops/profile.png' %}" class="img-circle"></td>
+                <td width="200px"><b>Omar Pool</b><br>Incubadora de negocios CEINTEC</td>
+                <td>Por Anunciar</td>
+              </tr>
+              <tr>
+                <td>4:00 - 4:45</td>
+                <td class="text-center" width="50px"><img src="{% static 'img/speakers/workshops/leonardo.jpg' %}" class="img-circle"> <br></td>
+                <td><b>Leonardo Jimenez</b><br>Stance Data</td>
+                <td>Como emprender sin morir en el intento.</td>
+              </tr>
+              <tr>
+                <td>5:00 - 5:45</td>
+                <td class="text-center"><img src="{% static 'img/speakers/workshops/cesar.jpg' %}" class="img-circle"></td>
+                <td><b>Cesar Asiático</b><br>Junior Achivement</td>
+                <td>Por Anunciar</td>
+              </tr>
+              <tr>
+                <td>6:00 - 6:45</td>
+                <td class="text-center"><img src="{% static 'img/speakers/workshops/claudina.jpg' %}" class="img-circle"></td>
+                <td><b>Claudina Valdez</b><br>Vicepresidencia</td>
+                <td>Por Anunciar</td>
+              </tr>
+            </table>
+          </div>
+
+           <div class="col-sm-10 col-sm-offset-1">
+            <table class="table table-hover">
+              <caption class="workshop-caption">Sala 6: "Instrumentos que facilitan el ingreso a una vida adulta productiva: becas, crédito educativo y voluntariado"</caption>
+              <tr>
+                <th width="100px">Hora</th>
+                <th width="50px" colspan="2">Por</th>
+                <th>Título</th>
+              </tr>
+              <tr>
+                <td>3:00 - 3:45</td>
+                <td class="text-center"><img src="{% static 'img/speakers/workshops/profile.png' %}" class="img-circle"></td>
+                <td width="250px"><b>Cynthia Leon</b><br>Credito Educativo OMTRIX</td>
+                <td>Por Anunciar</td>
+              </tr>
+              <tr>
+                <td>4:00 - 4:45</td>
+                <td class="text-center" width="50px"><img src="{% static 'img/speakers/workshops/profile.png' %}" class="img-circle"> <br></td>
+                <td><b>Luis Sena</b><br>Becas estudiantiles EDUPASS</td>
+                <td>Por Anunciar</td>
+              </tr>
+              <tr>
+                <td>5:00 - 5:45</td>
+                <td class="text-center" rowspan="2"><img src="{% static 'img/speakers/workshops/yann.jpg' %}" class="img-circle"></td>
+                <td rowspan="2"><b>Ivan Chevalier/ Yann Reynaud</b><br>ROTARAC de Rotary/Dream Project</td>
+                <td rowspan="2">Voluntariado e intercambio cultural</td>
+              </tr>
+              <tr>
+                <td>6:00 - 6:45</td>
+              </tr>
+            </table>
+          </div>
+
           </div>
           </div>
         </div><!-- /row --> 
