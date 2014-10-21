@@ -13,6 +13,7 @@ urlpatterns = patterns('',
     url(r'^charlistas/', 'app.views.speakers'),
     url(r'^talleres/', 'app.views.workshops'),
     url(r'^colaboradores/', 'app.views.sponsors'),
+    url(r'^prensa/', 'app.views.press'),
     url(r'^formulario/', 'app.views.attendee_form'),
 
     # Examples:

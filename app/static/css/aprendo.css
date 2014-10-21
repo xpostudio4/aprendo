@@ -234,6 +234,22 @@ p, a, h1, h2, h3, h4, h5, h6 {
 	font-size: 20px !important;
 }
 
+/*Press//////////////////////////////////////*/
+
+.np-text p {
+	text-align: justify;
+}
+
+.np-gallery li {
+	display: inline;
+	list-style-type: none;
+	padding-right: 20px;
+}
+
+.np-gallery img {
+	width: 200px;
+}
+
 /*Footer//////////////////////////////////////*/
 
 .footer {

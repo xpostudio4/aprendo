@@ -25,6 +25,10 @@ def sponsors(request):
 		form = AttendeeForm()
 		return render(request, 'colaboradores.html', {'form': form })
 
+def press(request):
+		form = AttendeeForm()
+		return render(request, 'prensa.html', {'form': form })
+
 @require_POST
 def attendee_form(request):
 	form = AttendeeForm(request.POST)
