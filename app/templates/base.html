@@ -112,32 +112,6 @@
     <!-- place project specific Javascript in this file -->
     <script src="{% static 'js/app.js' %}"></script>
 
-    <script type="text/javascript">
-      var link = $("#submit");
- 
-      link.click(
-          function(event){
-              //eliminate the default function
-              event.preventDefault();
-              $.ajax({
-                  url: '/formulario/',
-                  data:  $('#new-form').serialize(), 
-                  type: "POST",
-                  success: 
-                      function(result){
-                          $('#alert-green').removeClass('hidden');
-                          $('#new-form').trigger('reset');
-                          $('#alert-red').addClass('hidden');
-                          $('#alert-green').delay(3000).queue(function(){$('#alert-green').addClass('hidden')});
-                      },
-                  error: 
-                      function(xhr){
-                          $('#alert-red').removeClass('hidden');
-                          $('#alert-green').addClass('hidden');
-                      }
-              });
-      });
-    </script>
 
     {% block extra_js %}{% endblock extra_js %}
   </body>
