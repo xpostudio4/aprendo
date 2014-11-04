@@ -5,6 +5,8 @@ from django.shortcuts import render
 from django.views.decorators.http import require_POST
 from attendee.forms import AttendeeForm
 
+# the form is not being used
+
 def home(request):
 		form = AttendeeForm()
 		return render(request, 'index.html', {'form': form })
@@ -28,6 +30,10 @@ def sponsors(request):
 def press(request):
 		form = AttendeeForm()
 		return render(request, 'prensa.html', {'form': form })
+
+def resources(request):
+		form = AttendeeForm()
+		return render(request, 'recursos.html', {'form': form })
 
 @require_POST
 def attendee_form(request):
