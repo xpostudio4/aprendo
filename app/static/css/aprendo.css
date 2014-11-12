@@ -238,6 +238,7 @@ p, a, h1, h2, h3, h4, h5, h6 {
 
 .np-text p {
 	text-align: justify;
+	font-size: 16px;
 }
 
 .np-gallery li {
@@ -249,6 +250,12 @@ p, a, h1, h2, h3, h4, h5, h6 {
 .np-gallery img {
 	width: 200px;
  	margin-bottom: 30px;
+}
+
+#press .tab-content {
+	border: 1px solid #ddd;
+	border-top: transparent;
+	margin-bottom: 40px;
 }
 
 /*Resources//////////////////////////////////////*/
