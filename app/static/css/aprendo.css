@@ -243,11 +243,12 @@ p, a, h1, h2, h3, h4, h5, h6 {
 .np-gallery li {
 	display: inline;
 	list-style-type: none;
-	padding-right: 20px;
+	margin-right: 20px;
 }
 
 .np-gallery img {
 	width: 200px;
+ 	margin-bottom: 30px;
 }
 
 /*Resources//////////////////////////////////////*/
