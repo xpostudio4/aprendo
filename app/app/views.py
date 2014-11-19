@@ -35,6 +35,10 @@ def resources(request):
 		form = AttendeeForm()
 		return render(request, 'recursos.html', {'form': form })
 
+def gallery(request):
+		form = AttendeeForm()
+		return render(request, 'galeria.html', {'form': form })
+
 @require_POST
 def attendee_form(request):
 	form = AttendeeForm(request.POST)

@@ -16,6 +16,7 @@ urlpatterns = patterns('',
     url(r'^prensa/', 'app.views.press'),
     url(r'^formulario/', 'app.views.attendee_form'),
     url(r'^recursos/', 'app.views.resources'),
+    url(r'^galeria/', 'app.views.gallery'),
 
     # Examples:
     # url(r'^$', 'app.views.home', name='home'),
